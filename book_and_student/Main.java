@@ -20,7 +20,11 @@ public class Main {
         stud[1].toString();
         System.out.println(stud[1].allBook());
         System.out.println();
-        System.out.println(stud[0].indexOfBooks(0));
-        System.out.println(stud[0].indexOfBooks(2));
+        Book b = stud[0].indexOfBooks(0);
+        System.out.println(b.toString());
+        b = stud[0].indexOfBooks(2);
+        if(b == null)
+            System.out.println("Not found");
+
     }
 }
