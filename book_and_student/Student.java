@@ -47,14 +47,14 @@ public class Student {
 
 
 
-    public String indexOfBooks(int index){
+    public Book indexOfBooks(int index){
         int i = 0;
         for(Book book: books){
             if(i == index)
-                return book.toString();
+                return book;
             i++;
         }
-        return "Not found";
+        return null;
     }
 
 }
