@@ -48,13 +48,9 @@ public class Student {
 
 
     public Book indexOfBooks(int index){
-        int i = 0;
-        for(Book book: books){
-            if(i == index)
-                return book;
-            i++;
-        }
-        return null;
+        if(index >= books.size())
+            return null;
+        return books.get(index);
     }
 
 }
